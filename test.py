@@ -23,10 +23,11 @@ print(avrege(1,2,3,4,5,6,7,9))
 # 4번문제
 # print("you", "need", "python")
 # #5번문제
-# f1 = open("test1.txt", 'w')
-# f1.write("Life is too short")
-# f1.close()
-# f2 = open("test1.txt", 'r')
+f1 = open("test.txt", 'w')
+f1.write("Life is too short")
+f1.write("You Need java")
+f1.close()
+f2 = open("test.txt", 'r')
 # print(f2.read())
 # f2.close()
 # 6번문제
@@ -35,8 +36,8 @@ print(avrege(1,2,3,4,5,6,7,9))
 # 7번문제
 with open("test.txt", 'r') as f:
     line = f.readlines()
-    for i in range(0,len(line)):
-        line[i] = line[i].replace("java", "python")
+    for i in line:
+        i = i.replace("java", "python")
 
 with open("test.txt", 'w') as f:
     for i in line:
