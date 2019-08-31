@@ -5,3 +5,10 @@ def is_odd(a):
         print('홀')
 
 is_odd(2)
+def avrege(*b):
+    num = 0
+    for i in b:
+        num += i
+    return num/len(b)
+
+print(avrege(1,2,3,4,5,6,7,9))
